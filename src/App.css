@@ -5,14 +5,17 @@ body {
 }
 
 .container {
-  padding: 20px;
+  padding: 12px;
   color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .titulo {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 40px;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: white;
 }
 
 .categoria {
@@ -20,28 +23,43 @@ body {
 }
 
 .categoriaTitulo {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
   color: #4ea1ff;
 }
 
 .productosGrid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  width: 100%;
 }
 
 .producto {
   width: 100%;
+  min-height: 60px;
+
+  display: flex;
+  align-items: center;
+
   box-sizing: border-box;
+
   border: 3px solid #666;
-  border-radius: 12px;
-  padding: 18px;
-  font-size: 22px;
+  border-radius: 14px;
+
+  padding: 14px;
+
+  font-size: 1.05rem;
+
   cursor: pointer;
+
   background-color: #1f1f1f;
+
   transition: 0.2s;
+
   user-select: none;
+
+  word-break: break-word;
 }
 
 .producto:hover {
@@ -56,16 +74,51 @@ body {
 
 .botonCopiar {
   width: 100%;
-  padding: 20px;
-  font-size: 24px;
+
+  padding: 18px;
+
+  font-size: 1.2rem;
+
   margin-top: 20px;
+  margin-bottom: 40px;
+
   border: none;
+
   border-radius: 14px;
+
   background-color: #1976ff;
+
   color: white;
+
   cursor: pointer;
 }
 
 .botonCopiar:hover {
   background-color: #1560d1;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .categoriaTitulo {
+    font-size: 1.3rem;
+  }
+
+  .producto {
+  min-height: 70px;
+  font-size: 1rem;
+  padding: 16px;
+}
+
+  .botonCopiar {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
 }
