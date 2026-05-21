@@ -18,7 +18,7 @@ function App() {
     "Siracha",
     "Preparado para micheladas",
     "Vainilla",
-    "Águila",
+    "Anguila",
     "Azúcar"
   ],
 
@@ -113,8 +113,9 @@ function App() {
       >
         Copiar al portapapeles
       </button>
-
+      <pwa-install></pwa-install>
     </div>
+    
   )
 }
 
